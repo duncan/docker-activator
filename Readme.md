@@ -18,13 +18,14 @@ $ docker port 04a0a09e0ba4 8888
 0.0.0.0:49154
 ```
 
-This means that when you point your browser on your host OS to http://0.0.0.0:49154, you’ll be hooked up to the Activator UI instance running in your container. 
+This means that when you point your browser on your host OS to http://0.0.0.0:49154, you’ll be hooked up to the Activator UI instance running in your container.
 
-What? You’re on Mac OS X and need an environment to run this in? Here’s the quick version if you’re using HomeBrew:
+What? You’re on Mac OS X and need an environment to run this in? Here’s the quick version if you’re using HomeBrew and you already have VirtualBox installed:
 
 ```
 $ brew install boot2docker
 $ brew install docker
-$ brew boot2docker start
+$ boot2docker init
+$ boot2docker up
 $ export DOCKER_HOST=tcp://localhost:4243
 ```
