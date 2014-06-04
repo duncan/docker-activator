@@ -18,3 +18,4 @@ RUN cd /opt && wget http://downloads.typesafe.com/typesafe-activator/1.2.1/types
 
 EXPOSE 8888
 CMD ["/opt/activator/activator", "ui", "-Dhttp.address=0.0.0.0"]
+EXPOSE 9000
