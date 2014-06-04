@@ -3,9 +3,6 @@
 FROM dockerfile/ubuntu
 MAINTAINER James Duncan Davidson <duncan@jdd.io>
 
-ENV ACTIVATOR_VERSION 1.2.1
-ENV ACTIVATOR_URL http://downloads.typesafe.com/typesafe-activator/
-
 RUN \
   echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
   echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections && \
