@@ -9,5 +9,4 @@ RUN cd /opt && \
 
 EXPOSE 8888
 EXPOSE 9000
-ENV IVY_HOME /opt/activator/repository
 CMD ["/opt/activator/activator", "ui", "-Dhttp.address=0.0.0.0", "-Dorg.slf4j.simpleLogger.defaultLogLevel=trace"]
